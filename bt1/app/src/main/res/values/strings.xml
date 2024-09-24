@@ -18,4 +18,9 @@
     <string name="reset">Reset</string>
     <string name="save">Save</string>
     <string name="delete_user">Delete User</string>
+    <string-array name="gender_options">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
 </resources>

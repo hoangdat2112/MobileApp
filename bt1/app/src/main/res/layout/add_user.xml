@@ -1,44 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="24dp">
+    android:padding="16dp">
 
     <EditText
         android:id="@+id/txtUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/username"
-        android:inputType="text" />
+        android:hint="Username" />
 
     <EditText
         android:id="@+id/txtPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/password"
+        android:hint="Password"
         android:inputType="textPassword" />
 
     <EditText
         android:id="@+id/txtFullname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/fullname"
-        android:inputType="text" />
+        android:hint="Full Name" />
 
     <EditText
         android:id="@+id/txtEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/email"
+        android:hint="Email"
         android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/txtDateOfBirth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date of Birth"
+        android:focusable="false"
+        android:clickable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender:"
+        android:layout_marginTop="8dp" />
+
+    <!-- Spinner for Gender Selection -->
+    <Spinner
+        android:id="@+id/spinnerGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
 
     <Button
         android:id="@+id/btnAddUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/add_user"
-        android:layout_marginTop="24dp" />
+        android:text="Add User"
+        android:layout_marginTop="16dp" />
 
 </LinearLayout>
